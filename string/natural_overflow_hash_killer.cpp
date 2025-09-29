@@ -1,9 +1,9 @@
-/*
-* 生成两个不同的串，满足其自然溢出哈希值相同
-* 生成方法：
-* 对于 base 为偶数的情况，利用 base 幂次较高时与 2^64 同余构造
-* 对于 base 为奇数的情况，利用 Thue Morse 序列构造
-*/
+/**
+ * 生成两个不同的串，满足其自然溢出哈希值相同
+ * 生成方法：
+ * 对于 base 为偶数的情况，利用 base 幂次较高时与 2^64 同余构造
+ * 对于 base 为奇数的情况，利用 Thue Morse 序列构造
+ */
 #include<iostream>
 #include<random>
 #include<algorithm>

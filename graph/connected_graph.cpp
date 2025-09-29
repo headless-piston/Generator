@@ -1,8 +1,8 @@
-/*
-* 生成随机连通图（弱连通，无重边、自环，不可用于生成稠密图）
-* 生成方法：随机生成一棵树，然后在树上随机加边
-* 打乱方法：对所有点重新随机编号
-*/
+/**
+ * 生成随机连通图（弱连通，无重边、自环，不可用于生成稠密图）
+ * 生成方法：随机生成一棵树，然后在树上随机加边
+ * 打乱方法：对所有点重新随机编号
+ */
 #include<random>
 #include<iostream>
 #include<algorithm>
@@ -30,6 +30,7 @@ void shuf(){
         x.u=p[x.u];
         x.v=p[x.v];
     }
+    shuffle(e.begin(),e.end(),getrnd);
 }
 int main(){
     ofstream out("1.in");
